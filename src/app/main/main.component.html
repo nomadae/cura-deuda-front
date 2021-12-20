@@ -1,0 +1,58 @@
+<div class="navbar-top">
+
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="logo">My App</span>
+    <span class="example-spacer"></span>
+    <button mat-fab class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-fab class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+</div>
+<div style="width: 100%; height: 100%">
+  <div class="content-panel">
+    <div class="content">
+      <h3>Cotiza tu envío</h3>
+      <div>
+        <form [formGroup]="coloniasForm" #formv>
+          <div>
+            <label> Codigo postal </label>
+            <input type="text" formControlName="zipcode">
+          </div>
+          <div>
+            <label> Nombre del estado </label>
+            <input type="text" formControlName="nombre_estado">
+          </div>
+          <button (click)="buscar()"> Consultar </button>
+<!--          <mat-form-field>-->
+<!--            <mat-label>Hola</mat-label>-->
+<!--            <input matInput formControlName="zipcode">-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field>-->
+<!--            <mat-label>Hola</mat-label>-->
+<!--            <input matInput formControlName="nombre_estado">-->
+<!--          </mat-form-field>-->
+        </form>
+<!--        <form [formGroup]="form">-->
+<!--          <div class="row">-->
+
+<!--            <div class="col-9">-->
+<!--              <mat-form-field appearance="outline">-->
+<!--                <mat-label>Codigo Postal</mat-label>-->
+<!--                <input matInput type="text" formControlName="codigopostal" >-->
+<!--                <mat-error>Introduce el codigopostal.</mat-error>-->
+<!--              </mat-form-field>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--        </form>-->
+      </div>
+    </div>
+  </div>
+</div>
